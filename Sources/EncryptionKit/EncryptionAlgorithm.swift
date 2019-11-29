@@ -7,7 +7,7 @@
 
 import CommonCrypto
 
-enum EncryptionAlgorithm {
+public enum EncryptionAlgorithm {
     case aes256, aes128
     
     var keySize: Int {

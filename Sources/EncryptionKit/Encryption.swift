@@ -8,12 +8,12 @@
 import Foundation
 import CommonCrypto
 
-protocol Encryption {
+public protocol Encryption {
     var options: EncryptionOptions { get }
     var algorithm: EncryptionAlgorithm { get }
 }
 
-extension Encryption {
+public extension Encryption {
     
     func encrypt(string: String, key: String) -> Result<String, Error> {
         return utf8Encoded(string)

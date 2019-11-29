@@ -7,7 +7,7 @@
 
 import CommonCrypto
 
-enum EncryptionOptions {
+public enum EncryptionOptions {
     case ECBMode, PKCS7Padding, Both
     
     var options: CCOptions {
