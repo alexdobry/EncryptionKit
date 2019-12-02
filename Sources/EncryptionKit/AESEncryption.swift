@@ -9,8 +9,8 @@ public struct AESEncryption: Encryption {
     public let options: EncryptionOptions
     public let algorithm: EncryptionAlgorithm
     
-    init(options: EncryptionOptions = .PKCS7Padding, algorithm: EncryptionAlgorithm = .aes256) {
-        self.options = options
-        self.algorithm = algorithm
+    public init() {
+        self.options = .PKCS7Padding
+        self.algorithm = .aes256
     }
 }
